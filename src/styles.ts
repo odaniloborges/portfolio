@@ -5,13 +5,13 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Inter", sans-serif;
   }
 
   body {
     margin-top: 80px;
-    font-family: 'Roboto', sans-serif;
     background-color: #f5f5f5;
-    color: #3333;
+    color: #333;
   }
 `
 
