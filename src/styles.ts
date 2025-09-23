@@ -6,12 +6,17 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: "Inter", sans-serif;
+    list-style: none;
   }
 
   body {
-    margin-top: 80px;
+    padding-top: 80px;
     background-color: #f5f5f5;
     color: #333;
+
+    @media (max-width: 768px) {
+    padding-top: 32px;
+    }
   }
 `
 
@@ -25,8 +30,12 @@ export const Container = styled.div`
   grid-template-columns: 128px auto;
   column-gap: 56px;
 
+  @media (max-width: 768px) {
+    max-width: 80%;
+    display: block;
+  }
+
   img {
     max-width: 100%;
-    border-radius: 50%;
   }
 `
