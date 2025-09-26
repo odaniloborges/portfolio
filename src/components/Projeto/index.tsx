@@ -6,7 +6,7 @@ const Projeto = () => (
   <Card>
     <Title>Projeto Lista de Tarefa</Title>
     <Paragraph tipo="secundario">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      Lorem ipsum dolor sit, amet consectetur.
     </Paragraph>
     <LinkBotao>Visualizar</LinkBotao>
   </Card>
