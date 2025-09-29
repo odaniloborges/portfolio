@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle, DefaultTheme } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -12,8 +12,8 @@ const GlobalStyle = createGlobalStyle`
   body {
     padding-top: 80px;
     padding-bottom: 80px;
-    background-color: #f5f5f5;
-    color: #333;
+    background-color: ${(props) => (props.theme as DefaultTheme).corDeFundo};
+    color: ${(props) => (props.theme as DefaultTheme).corPrincipal};
 
     @media (max-width: 768px) {
     padding-top: 32px;
